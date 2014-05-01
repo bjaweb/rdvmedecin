@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @ContextConfiguration(locations = {"classpath:/spring-config-dao.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-public class BaseTest {
+public class BaseTest { 
 
 	  // méthode utilitaire - affiche les éléments d'une collection 
 	  protected static void display(String message, List elements) { 

@@ -29,6 +29,7 @@ public class JUnitTestDao extends BaseTest{
 	  // date du jour 
 	  Date jour = new Date(); 
 	 
+	  // pas besoin de faire le beforeclass car exexuter dans class mere
 //	  @BeforeClass 
 //	  public static void init() throws NamingException { 
 //	    
@@ -36,12 +37,12 @@ public class JUnitTestDao extends BaseTest{
 //		 dao = (IDao)ctx.getBean("dao");
 ////		  
 ////	    // instanciation couche dao 
-////	    dao = (IDaoRemote) initialContext.lookup("rdvmedecins.dao"); 
+////	    dao = (IDaoRemote) initialContext.lookup("rdvmedecins.dao");  
 //	  } 
 	 
 	  @Test 
 	  public void test1() { 
-		  
+		 
 	    // affichage clients 
 	    List<Client> clients =dao.getAllClients(); 
 	    display("Liste des clients :", clients); 
